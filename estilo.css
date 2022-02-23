@@ -105,6 +105,10 @@ body{
 	height: 65px;
 }
 
+.menu ul li:hover a{
+	text-decoration: underline;
+}
+
 .link-menu{
 	font-size: 25px;
 	font-weight: bolder;
