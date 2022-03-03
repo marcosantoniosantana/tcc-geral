@@ -95,6 +95,11 @@ body{
 
 #menu-bar{
 	display: none;
+	margin-left: 20px;
+}
+
+.menu ul{
+	margin-top: 5px;
 }
 
 .menu ul li{
@@ -102,12 +107,18 @@ body{
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	height: 65px;
+	height: 60px;
+	background: transparent;
+}
+
+.menu ul li:hover{
+	background: #0a0a32;
 }
 
 .menu ul li:hover a{
 	text-decoration: underline;
 }
+
 
 .link-menu{
 	font-size: 25px;
@@ -129,8 +140,28 @@ body{
 		display: none;
 	}
 
-	nav ul{
+	.menu{
+		/*width: 500px;*/
+		width: 70%;
+		background: #040532;
+		position: fixed;
 		visibility: hidden;
+	}
+
+	.menu ul{
+		width: 70%;
+		padding: 10%;
+		margin-left: 30px;
+	}
+
+	.menu ul li{
+		width: 100%;
+		background: #0b0c42;
+		margin-bottom: 5px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	#menu-bar{
@@ -140,9 +171,19 @@ body{
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		display: block;
+		margin: 10px 0px 0px 30px;
+		visibility: visible;
+	}
+
+	.visible{
+		visibility: visible;
 	}
 
 	.titulo-logo{
 		font-size: 3rem;
+	}
+
+	.logo, .barra-pesquisa{
+		margin: 10px;
 	}
 }
